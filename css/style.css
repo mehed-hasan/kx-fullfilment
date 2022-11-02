@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border: none;
+}
+  select {
+    appearance: none;
+  }
+  #main{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  /* Loder Css  */
+  
+  #preloader{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color:#ffffff;
+    z-index: 99999;
+  }
+  .spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotation 2s 0s linear infinite;
+
+
+  }
+
+  /* Spin animated  */
+@keyframes rotation {
+	  0%   {-webkit-transform: rotate(0deg)}
+    25%  {-webkit-transform: rotate(0deg)}
+    50%  {-webkit-transform: rotate(360deg)}
+    75%  {-webkit-transform: rotate(360deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+  /* Loader Css Ended  */
+
+
+
+  /* Code for Navabr started  */
+  .navbar{
+    background: #ffffff;
+    box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+  }
+  
+  .nav-item{
+    padding: 0px 12px;
+  }
+  .btn-outline{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #EE333A;
+    color: #EE333A;
+    width: #EE333A;
+    font-weight: 600;
+  }
+
+  .user-nav-item span{
+    padding: 0px 5px;
+  }
+  ul.dropdown-menu{
+    box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+    border: none
+  }
+  ul.dropdown-menu li a:hover{
+    transition: .5s;
+  }
+  ul.dropdown-menu li a:hover{
+    background-color: #000000;
+    color: white;
+   
+  }
+  .dropdown-toggle::after {
+    display: none;
+}
+.arrow{
+  margin-left: 5px;
+}
+.nav-link.active{
+  border-bottom: 2px solid #EC1C24 ;
+  
+}
+.navbar-nav li a {
+  color:rgba(0,0,0,.55);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #223550 !important;
+}
+
+
+
+
+#banner{
+  margin-top: 44px;
+}
+
+
+/* Map logo animation */
+.min_logo{
+  /* animation: glow 2s 0s linear infinite; */
+  height: 37px;
+  width:37px;
+  }
+  
+  @keyframes glow{
+  0%{
+  
+  box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);
+  height: 37px;
+  width:37px;
+  
+  }
+  
+  50%{
+  box-shadow: 5px 5px 20px rgb(81, 224, 210),-5px -5px 20px rgb(81, 224, 210);
+  height: 42px;
+  width:40px;
+  margin-left: -2px;
+  
+  }
+  100%{
+  box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);
+  height: 37px;
+  width:37px;
+  
+  }
+  }
+/* Map logo animation ended  */
+
+h2.banner_big_text {
+  max-width: 469px;
+  width:100%;
+  font-size: 40px;
+  color: #223551;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.search{
+  display: inline-block;
+}
+.get_started_btn{
+ margin-top: 60px;
+ max-width: 265px;
+ width:100%;
+ height: 48px;
+ border: none;
+ background-color: #FFFFFF;
+ border-radius: 20%;
+ box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+ position: relative;
+ border-radius: 50px;
+ overflow: hidden;
+ font-weight: 600;
+ text-align: left;
+ padding-left: 30px;
+ color: #EE333A;
+ width: 48px;
+ animation-name: expand;
+ animation-duration: 4s;
+ width: 265px;
+ 
+
+}
+.btn-arrow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: moveable 2s 0s linear infinite;
+}
+
+@keyframes moveable {
+  0%   {margin-right:0px}
+  50%   {margin-right:12px}
+  100%   {margin-right:0px}
+}
+
+
+
+/* The animation code */
+@keyframes expand {
+0%   {width:48px}
+25%   {width:48px}
+50%   {width:265px}
+100%   {width:265px}
+
+}
+.btn_arrow_text{
+opacity: 1;
+animation-name: fade;
+animation-duration: 5s;
+}
+@keyframes fade {
+0%   {opacity: 0;}
+25%   {opacity: 0;}
+50% {opacity: 1;}
+100% {opacity: 1;}
+
+}
+
+
+/* service_intro started from here  */
+
+.acivement_number h4{
+  color: #EE333A;
+  font-size: 36px;
+  font-weight: 600;
+} 
+.acivement_number p{
+ font-size: 14px;
+ color: #d7dbe1;
+ font-weight: bold;
+}
+@media screen and (min-width:1208px){
+ .info_boxes{
+  width: 20%;
+}
+}
+
+.service_intro ul li {
+ list-style: none;
+ font-size: 16px;
+ font-weight: 600;
+ margin-bottom: 14px;
+ display: flex;
+}
+.service_intro ul span{
+margin-right: 15px;
+}
+
+.service_intro ul:nth-of-type(1){
+margin-left: -18px !important;
+}
+
+
+/* service_intro started from here ended  */
+
+
+
+/* Services section has started  */
+
+/* Services section has ended  */
+
+
+.shrink{
+  padding-top: 35px !important;
+  
+}
+
